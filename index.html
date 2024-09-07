@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="./public/image/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <title>TWIX</title>
+  </head>
+  <body>
+    <header
+      class="w-full bg-[#E9A842] flex flex-col justify-center items-center"
+    >
+      <div class="hidden lg:flex lg:w-full lg:h-[162px] xl:justify-center">
+        <div class="w-full xl:max-w-[1440px] h-[162px] flex justify-between">
+          <img
+            class="lg:w-[212px] lg:h-[98px] object-contain lg:mx-10 lg:my-8"
+            src="./public/image/logo.png"
+            alt=""
+          />
+          <div class="w-full">
+            <div
+              class="flex w-full h-[42px] pt-2 lg:pr-10 items-center justify-end"
+            >
+              <span
+                class="font-drupalPrimaryTypefaceFont text-[#490F00] text-[14px] xl:font-[500] xl:tracking-[1.6px] xl:leading-[18px] px-4 hover:text-[#E62B1E] lg:tracking-[0.7px] leading-[14px]"
+                >Where To Buy</span
+              >
+              <div class="w-[1px] h-[45px] bg-[#490F00]"></div>
+              <span
+                class="font-drupalPrimaryTypefaceFont text-[#490F00] text-[14px] xl:font-[500] xl:tracking-[1.6px] xl:leading-[18px] px-4 hover:text-[#E62B1E] lg:tracking-[0.7px] leading-[14px]"
+                >Contact & Help</span
+              >
+              <div>
+                <span
+                  class="flex items-center font-drupalPrimaryTypefaceFont text-[#490F00] text-[14px] xl:font-[500] xl:tracking-[1.6px] xl:leading-[18px] px-4 hover:text-[#E62B1E] lg:tracking-[0.7px] leading-[14px]"
+                >
+                  <img class="mr-2" src="./public/image/search.svg" alt="" />
+                  Search</span
+                >
+              </div>
+            </div>
+            <div class="flex items-center lg:pt-8 lg:pl-5 justify-start">
+              <div>
+                <div class="flex items-center">
+                  <div class="group">
+                    <span
+                      class="peer relative flex font-drupalPrimaryTypefaceFont text-[#490F00] xl:font-[500] xl:text-[18px] xl:leading-[18px] xl:tracking-[1.6px] lg:text-[16px] lg:leading-4 lg:tracking-[0.7px] xl:pb-2 items-center hover:text-[#E62B1E]"
+                      >Our Products
+                      <img
+                        src="./public/image/arrowBottom.svg"
+                        alt=""
+                        class="xl:w-[12px] xl:h-[7px] ml-1"
+                      />
+                    </span>
+                    <div
+                      class="peer-hover:visible group-hover:visible z-10 invisible xl:py-2 bg-white absolute"
+                    >
+                      <p
+                        class="xl:w-[200px] xl:h-[38px] text-[14px] font-semibold hover:text-[#E62B1E] tracking-[1.6px] px-5 py-3"
+                      >
+                        All Products
+                      </p>
+                      <p
+                        class="xl:w-[200px] xl:h-[38px] text-[14px] font-semibold hover:text-[#E62B1E] tracking-[1.6px] px-5 py-3"
+                      >
+                        Ice Cream
+                      </p>
+                      <p
+                        class="xl:w-[200px] xl:h-[38px] text-[14px] font-semibold hover:text-[#E62B1E] tracking-[1.6px] px-5 py-3"
+                      >
+                        TWIX Cookie Dough
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="ml-10 font-drupalPrimaryTypefaceFont text-[#490F00] xl:text-[18px] xl:font-[500] xl:tracking-[1.6px] xl:leading-[18px] xl:pb-2 items-center hover:text-[#E62B1E]"
+                    >Recipes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full flex lg:hidden items-center justify-between h-[77px] py-5 pl-5 sm:pb-[25px] md:h-[120px] md:pr-10"
+      >
+        <img
+          class="object-contain w-[104px] h-[39px] md:w-[141px] md:h-[53px]"
+          src="./public/image/logo.png"
+          alt=""
+        />
+        <div
+          class="flex w-[93px] h-5 sm:w-[125px] sm:h-[21px] sm:pr-10 items-center"
+        >
+          <img
+            class="pr-3 object-contain"
+            src="./public/image/menu.svg"
+            alt=""
+          />
+          <span
+            class="text-[14px] sm:text-[18px] text-[#490f00] font-drupalPrimaryTypefaceFont font-[500] tracking-[0.7px]"
+            >MENU</span
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="xl:w-full xl:h-auto">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video
+                class="w-full object-cover md:h-[500px] lg:h-[600px] xl:h-full"
+                controls
+                autoplay
+                loop
+                src="./public/video/sliderVideo.mp4"
+              ></video>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-[375px] object-cover md:hidden"
+                src="./public/image/sliderImageOne.png"
+                alt=""
+              />
+              <img
+                class="hidden md:block lg:hidden w-full h-[500px] object-cover"
+                src="./public/image/sliderImageOneMd.png"
+                alt=""
+              />
+              <img
+                class="hidden lg:block xl:hidden w-full h-[500px] object-cover"
+                src="./public/image/sliderImageOneLg.png"
+                alt=""
+              />
+              <img
+                class="hidden xl:block w-full h-[600px] object-cover"
+                src="./public/image/sliderImageOneXl.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-[375px] object-cover md:hidden"
+                src="./public/image/sliderImageTwo.png"
+                alt=""
+              />
+              <img
+                class="hidden md:block lg:hidden w-full h-[500px] object-cover"
+                src="./public/image/sliderImageTwoMd.png"
+                alt=""
+              />
+              <img
+                class="hidden lg:block xl:hidden w-full h-[500px] object-cover"
+                src="./public/image/sliderImageTwoLg.png"
+                alt=""
+              />
+              <img
+                class="hidden xl:block w-full h-[600px] object-cover"
+                src="./public/image/sliderImageTwoXl.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="w-full h-auto bg-[#FF1925]">
+        <img
+          class="w-full md:hidden h-[375px] object-cover"
+          src="./public/image/resonsToLoveATwixImage.png"
+          alt=""
+        />
+        <img
+          class="w-full hidden lg:hidden md:block md:h-[500px] object-cover"
+          src="./public/image/resonsToLoveATwixImageMd.png"
+          alt=""
+        />
+        <img
+          class="w-full hidden xl:hidden lg:block lg:h-[500px] object-cover"
+          src="./public/image/resonsToLoveATwixImageLg.png"
+          alt=""
+        />
+        <img
+          class="w-full hidden xl:block xl:h-[600px] max-w-[1440px] mx-auto object-cover"
+          src="./public/image/resonsToLoveATwixImageXl.png"
+          alt=""
+        />
+      </div>
+      <div class="w-full h-auto bg-[#FFF0EB]">
+        <img
+          class="w-full md:hidden h-[375px] object-cover"
+          src="./public/image/twixSaltedCaramelSm.png"
+          alt=""
+        />
+        <img
+          class="w-full hidden lg:hidden md:block md:h-[500px] object-cover"
+          src="./public/image/twixSaltedCaramelMd.png"
+          alt=""
+        />
+        <img
+          class="w-full hidden xl:hidden lg:block lg:h-[500px] object-cover"
+          src="./public/image/twixSaltedCaramelLg.png"
+          alt=""
+        />
+        <img
+          class="w-full hidden xl:block xl:h-[600px] max-w-[1440px] mx-auto object-cover"
+          src="./public/image/twixSaltedCaramelXl.png"
+          alt=""
+        />
+      </div>
+      <div class="bg-[#E9A842] flex justify-center">
+        <div
+          class="w-full h-[231px] px-5 pt-5 pb-[25px] md:h-[123px] md:px-10 md:pt-[10px] md:pb-[14px] md:flex lg:items-center lg:h-[154px] xl:justify-start xl:max-w-[1440px]"
+        >
+          <div
+            class="w-full h-[93px] md:w-[141px] lg:w-[212px] lg:h-[98px] flex items-center justify-start"
+          >
+            <img
+              class="w-[104px] h-[39px] mt-5 mb-[39px] md:w-[141px] md:h-[53px] md:mt-5 md:mb-[26px] lg:w-[212px] lg:h-[98px] lg:m-0 object-contain"
+              src="./public/image/logo.png"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="flex flex-col h-[93px] lg:w-677px md:m-0 md:justify-around lg:flex-row lg:h-[130px] lg:items-center xl:ml-[60px]"
+          >
+            <div
+              class="flex flex-row gap-5 md:ml-10 md:gap-[10px] justify-start xl:ml-0"
+            >
+              <span
+                class="block w-[212px] h-[18px] mb-[26px] md:m-0 md:w-[215px] md:mr-10 lg:w-[133px] lg:mr-10 xl:w-[149px] xl:mr-10 font-drupalPrimaryTypefaceFont text-[#490F00] text-[16px] leading-4 tracking-[0.48px] md:tracking-[0.7px] xl:text-[18px]"
+                >Contact & Help</span
+              >
+              <span
+                class="block w-[212px] h-[18px] mb-[26px] md:m-0 md:w-[165px] md:mr10 lg:w-[133px] lg:mr-10 xl:w-[149px] xl:mr-10 font-drupalPrimaryTypefaceFont text-[#490F00] text-[16px] leading-4 tracking-[0.48px] md:tracking-[0.7px] xl:text-[18px]"
+                >Where To Buy</span
+              >
+            </div>
+            <div class="md:ml-10 lg:ml-0">
+              <span
+                class="block w-[212px] h-[18px] mb-[26px] md:m-0 lg:w-[177px] lg:mr-10 xl:w-[197px] xl:m-0 font-drupalPrimaryTypefaceFont text-[#490F00] text-[16px] leading-4 tracking-[0.48px] md:tracking-[0.7px]"
+                >Mars Sustainability</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full h-full flex justify-center bg-[#E62B1E]">
+      <div
+        class="w-full h-full px-5 pt-12 pb-5 md:px-10 md:py-5 lg:w-[1440px] lg:px-10 lg:py-5 flex flex-col"
+      >
+        <div class="w-full h-auto mb-[10px] lg:hidden">
+          <div>
+            <span
+              class="block font-drupalPrimaryTypefaceFont text-[16px] tracking-[0.7px] leading-4 text-white lg:text-[18px]"
+              >FOLLOW US ON</span
+            >
+          </div>
+          <div class="flex flex-row sm:hidden">
+            <div class="w-full grid grid-cols-5 mt-[10px]">
+              <div class="w-auto h-[24px] mr-[5px] mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/facebook.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-auto h-[24px] mr-[5px] mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/instagram.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-auto h-[24px] mr-[5px] mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/x.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-auto h-[24px] mr-[5px] mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/youtube.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-auto h-[24px] mr-[5px] mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain mb-[10px]"
+                  src="./public/image/tiktok.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-[10px] hidden sm:grid grid-flow-col grid-cols-6 md:hidden"
+          >
+            <div class="w-[60px] h-[24px] mb-[10px]">
+              <img
+                class="w-5 h-5 object-contain"
+                src="./public/image/facebook.svg"
+                alt=""
+              />
+            </div>
+            <div class="w-[60px] h-[24px] mb-[10px]">
+              <img
+                class="w-5 h-5 object-contain"
+                src="./public/image/instagram.svg"
+                alt=""
+              />
+            </div>
+            <div class="w-[60px] h-[24px] mb-[10px]">
+              <img
+                class="w-5 h-5 object-contain"
+                src="./public/image/x.svg"
+                alt=""
+              />
+            </div>
+            <div class="w-[60px] h-[24px] mb-[10px]">
+              <img
+                class="w-5 h-5 object-contain"
+                src="./public/image/youtube.svg"
+                alt=""
+              />
+            </div>
+            <div class="w-[60px] h-[24px] mb-[10px]">
+              <img
+                class="w-5 h-5 object-contain"
+                src="./public/image/tiktok.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="md:h-[74px] mt-[10px] flex-col hidden md:flex">
+            <div class="flex flex-row">
+              <div class="w-20 h-6 mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/facebook.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-20 h-6 mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/instagram.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-20 h-6 mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/x.svg"
+                  alt=""
+                />
+              </div>
+              <div class="w-20 h-6 mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/youtube.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <div class="w-20 h-6 mb-[10px]">
+                <img
+                  class="w-5 h-5 object-contain"
+                  src="./public/image/tiktok.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-[1px] lg:hidden mt-5 mb-[10px] opacity-50 bg-white"
+        ></div>
+
+        <div class="mt-[10px] flex md:hidden">
+          <div class="flex flex-col w-[212px]">
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Note to Parents</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Modern Slavery Act</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Cookie Settings</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Legal</span
+            >
+            <span class="text-white mb-[22px] text-[12px] flex font-medium"
+              >Your Privacy Choices
+              <img
+                class="pl-2 object-contain"
+                src="/public/image/privacyIcon.svg"
+                alt=""
+              />
+            </span>
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >FAQ</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Supply Chain Transparency</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Cookie Notice</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Privacy Policy</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Ad Choice</span
+            >
+            <span class="text-white mb-[22px] text-[12px] font-medium"
+              >Accessibility</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex lg:hidden gap-x-[10px] md:h-[148px] my-[10px] md:mr-[20px]"
+        >
+          <div class="md:flex md:flex-col md:w-full md:h-[13px]">
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Note to Parents</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Cookie Notice</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Legal</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Accessibility</span
+            >
+          </div>
+          <div class="md:flex md:flex-col md:w-full md:h-[13px] md:mb-[21px]">
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Supply Chain Transparency</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Cookie Settings</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Ad Choice</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >FAQ</span
+            >
+          </div>
+          <div class="md:flex md:flex-col md:w-full md:h-[13px] md:mb-[21px]">
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Modern Slavery Act</span
+            >
+            <span
+              class="text-white md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Privacy Policy</span
+            >
+            <span
+              class="text-white flex md:text-[14px] md:mb-[21px] md:tracking-[1.4px] md:leading-[13px] md:font-medium"
+              >Your Privacy Choices
+              <img
+                class="pl-2 object-contain"
+                src="/public/image/privacyIcon.svg"
+                alt=""
+              />
+            </span>
+          </div>
+        </div>
+
+        <div class="lg:hidden">
+          <span
+            class="font-drupalPrimaryTypefaceFont text-[12px] tracking-[0.7px] leading-[22px] font-normal md:text-[14px] md:font-medium text-white"
+            >This is a marketing site</span
+          >
+        </div>
+        <div class="w-full h-auto mt-[12px] mb-[14px] lg:hidden">
+          <p
+            class="text-[12px] tracking-[0.48px] leading-[22px] font-medium md:text-[14px] md:tracking-[1.4px] md:leading-[22px] md:w-full text-white"
+          >
+            This is a marketing site This site includes information, games,
+            advertisements and promotional offers featuring our products.
+            Children should get a parent’s permission before visiting any
+            website or giving personal information. You must be 18 or older to
+            shop online.
+          </p>
+        </div>
+        <div class="mb-6 lg:hidden">
+          <p
+            class="w-[445px] h-auto text-[12px] tracking-[0.7px] leading-[22px] font-medium md:text-[14px] md:tracking-[1.4px] md:leading-[22px] md:w-full text-white"
+          >
+            ® TM Trademarks © Mars, Incorporated 2024. Other trademarks are
+            property of their respective owners.
+          </p>
+        </div>
+
+        <!-- lg: start footer -->
+
+        <div class="hidden lg:grid grid-flow-col grid-cols-12 mr-[10px]">
+          <div class="w-full col-span-4 h-[177px] mb-[10px]">
+            <div>
+              <span
+                class="block font-drupalPrimaryTypefaceFont text-[18px] tracking-[0.7px] leading-4 text-white"
+                >FOLLOW US ON</span
+              >
+            </div>
+            <div class="w-full grid grid-cols-12">
+              <div class="col-span-8 grid grid-cols-5 mt-[10px]">
+                <div class="w-full h-[24px] mr-[5px] mb-[10px]">
+                  <img
+                    class="w-5 h-5 object-contain"
+                    src="./public/image/facebook.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="w-full h-[24px] mr-[5px] mb-[10px]">
+                  <img
+                    class="w-5 h-5 object-contain"
+                    src="./public/image/instagram.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="w-full h-[24px] mr-[5px] mb-[10px]">
+                  <img
+                    class="w-5 h-5 object-contain"
+                    src="./public/image/x.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="w-full h-[24px] mr-[5px] mb-[10px]">
+                  <img
+                    class="w-5 h-5 object-contain"
+                    src="./public/image/youtube.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="w-full h-[24px] mr-[5px] mb-[10px]">
+                  <img
+                    class="w-5 h-5 object-contain mb-[10px]"
+                    src="./public/image/tiktok.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div class="w-full col-span-8">
+            <div class="grid grid-cols-3 gap-x-[10px]">
+              <div class="flex flex-col">
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px] [tab-size:]"
+                  >Note to Parents</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Cookie Notice</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Legal</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Accessibility</span
+                >
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Supply Chain Transparency</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Cookie Settings</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Ad Choice</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >FAQ</span
+                >
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Modern Slavery Act</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] inline-block h-4 mb-[21px] text-[14px]"
+                  >Privacy Policy</span
+                >
+                <span
+                  class="text-white font-medium tracking-[1.6px] h-4 mb-[21px] text-[14px] flex items-center"
+                  >Your Privacy Choices
+                  <img
+                    class="pl-2 object-contain"
+                    src="/public/image/privacyIcon.svg"
+                    alt=""
+                  />
+                </span>
+              </div>
+            </div>
+            <div>
+              <div class="my-3">
+                <span
+                  class="font-drupalPrimaryTypefaceFont text-[12px] tracking-[0.7px] leading-[22px] font-normal text-white xl:tracking-[2px]"
+                  >This is a marketing site</span
+                >
+              </div>
+              <div class="w-full h-auto my-3">
+                <p
+                  class="text-[12px] tracking-[0.7px] leading-[20px] font-medium text-white xl:tracking-[2px]"
+                >
+                  This is a marketing site This site includes information,
+                  games, advertisements and promotional offers featuring our
+                  products. Children should get a parent’s permission before
+                  visiting any website or giving personal information. You must
+                  be 18 or older to shop online.
+                </p>
+              </div>
+              <div class="mb-6">
+                <p
+                  class="w-full h-auto text-[12px] tracking-[0.7px] leading-[22px] font-medium text-white xl:tracking-[2px]"
+                >
+                  ® TM Trademarks © Mars, Incorporated 2024. Other trademarks
+                  are property of their respective owners.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full border-b-white border-b-[1px] opacity-50"></div>
+        <!-- lg: end footer -->
+
+        <div class="border-b-white border-b-[1px] opacity-50 lg:hidden"></div>
+        <div class="w-auto h-auto mt-[50px] mb-[18px] md:mt-[30px]">
+          <span
+            class="font-drupalPrimaryTypefaceFont text-[20px] text-white tracking-[0.48px] leading-[22px] mb-[18px] md:text-[26px] md:leading-[28px] md:h-full md:tracking-[0.7] lg:text-[28px] lg:leading-[30.8px] lg:tracking-[1.8px]"
+            >LOVE TWIX®? Check out more brands from Mars Wrigley.</span
+          >
+        </div>
+
+        <div
+          class="group flex items-center relative overflow-hidden text-center w-[133px] h-[54px] border-2 rounded-md mb-[30px] md:mb-[10px] md:w-[157px] md:h-[54px] md:border-2 md:rounded-lg lg:w-[202px] lg:h-[64px] lg:px-[10px] lg:mb-0"
+        >
+          <div
+            class="bg-white absolute buttonClipPath duration-700 w-[160px] h-[54px] right-[133px] group-hover:translate-x-[164px] md:w-[200px] md:right-[150px] md:group-hover:translate-x-[190px] lg:right-[202px] lg:w-[250px] lg:h-[64px] lg:group-hover:translate-x-[250px]"
+          ></div>
+          <span
+            class="font-drupalPrimaryTypefaceFont text-white w-full text-[14px] md:leading-[50px] md:tracking-[0.7px] lg:text-[16px] lg:tracking-[1.7px] lg:leading-[70px] group-hover:text-[#E62B1E] delay-[180ms] duration-300 z-10"
+            >SEE ALL</span
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoHeight: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

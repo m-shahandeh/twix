@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DrupalPrimaryTypefaceFont";
+  src: url("../font/GoforGoldDisplayCondensed.woff") format("opentype");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@layer utilities {
+  .buttonClipPath {
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  }
+}
